@@ -2,8 +2,7 @@
 @use "./styles/partials/mixins" as *;
 
 .projects {
-  background-color: #383838;
-  &__container {
+  .container {
     padding: 1rem;
 
     @include tablet {
@@ -15,7 +14,7 @@
     }
   }
 
-  &__title {
+  .title {
     margin-bottom: 1rem;
     // background-image: url("../../assets/images/texture.png");
 
@@ -32,7 +31,7 @@
     }
   }
 
-  &__item-wrapper {
+  .itemWrapper {
     display: flex;
     flex-direction: column;
     @include tablet {
@@ -40,7 +39,7 @@
     }
   }
 
-  &__image {
+  .image {
     height: 10rem;
     width: 15rem;
     margin: 0 0 1rem 0;
@@ -51,40 +50,40 @@
     }
   }
 
-  &__header {
+  .header {
     color: #f1c43e;
 
     margin: 0 0 0.75rem 0;
   }
 
-  &__link {
+  .link {
     color: #f1c43e;
-
+    align-self: center;
     margin: 0;
   }
 
-  &__link-wrapper {
+  .linkWrapper {
     display: flex;
     justify-content: space-between;
     margin: 0;
   }
 
-  &__link-item-wrapper {
+  .linkItemWrapper {
     margin: 0;
     display: flex;
     gap: 0.5rem;
   }
 
-  &__summary {
+  .summary {
     line-height: 2rem;
     margin-bottom: 1rem;
   }
 
-  &__tech-title {
+  .tech-title {
     font-size: 0.7rem;
   }
 
-  &__tech {
+  .tech {
     font-size: 0.6rem;
     margin: 0;
     color: #91f391;
@@ -95,12 +94,13 @@
     }
   }
 
-  &__icon {
+  .icon {
     margin: 0;
+    align-self: center;
     width: 1rem;
   }
 
-  &__status {
+  .status {
     color: rgb(223, 136, 136);
   }
 }

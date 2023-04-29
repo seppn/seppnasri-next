@@ -2,9 +2,7 @@
 @use "./styles/partials/mixins" as *;
 
 .header {
-  background-color: #383838;
-
-  &__container {
+  .container {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -18,7 +16,7 @@
     }
   }
 
-  &__nav {
+  .nav {
     display: none;
     margin: 0;
 
@@ -29,20 +27,12 @@
     }
   }
 
-  &__logo {
-    width: 50%;
+  .logo {
+    width: 100%;
     margin: 0;
-
-    @include tablet {
-      width: 30%;
-    }
-
-    @include desktop {
-      width: 20%;
-    }
   }
 
-  &__navItem {
+  .navItem {
     cursor: pointer;
 
     @include desktop {
@@ -54,7 +44,7 @@
     text-decoration: none;
   }
 
-  &__burger {
+  .burger {
     width: 10%;
     margin: 0;
 

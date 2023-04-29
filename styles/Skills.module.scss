@@ -2,9 +2,7 @@
 @use "./styles/partials/mixins" as *;
 
 .skills {
-  background-color: #383838;
-
-  &__container {
+  .container {
     padding: 1rem;
 
     @include tablet {
@@ -16,7 +14,7 @@
     }
   }
 
-  &__title {
+  .title {
     margin-bottom: 1rem;
     // background-image: url("../../assets/images/texture.png");
 
@@ -33,13 +31,14 @@
     }
   }
 
-  &__item-wrapper {
+  .itemWrapper {
     display: flex;
     flex-direction: column;
+    align-self: center;
     margin: 0;
   }
 
-  &__mobile-wrapper {
+  .mobileWrapper {
     display: flex;
     justify-content: space-around;
     margin: 0 0 1.2rem 0;
@@ -50,14 +49,14 @@
     }
   }
 
-  &__tablet-wrapper {
+  .tabletWrapper {
     @include tablet {
       display: flex;
       justify-content: space-between;
     }
   }
 
-  &__desktop-wrapper {
+  .desktopWrapper {
     @include tablet {
       display: flex;
       width: 100%;
@@ -69,13 +68,14 @@
     }
   }
 
-  &__react {
+  .react {
     width: 50%;
   }
 
-  &__item {
+  .item {
     margin: 0;
     width: 4.5rem;
+    height: 4.5rem;
     align-self: center;
     padding: 0.2rem;
     border-radius: 10px;

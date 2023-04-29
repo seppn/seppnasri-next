@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../../styles/Header.module.scss";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
@@ -26,12 +27,12 @@ function Header() {
   }
 
   return (
-    <header className={styles}>
+    <header className={styles.header}>
       <div className={styles.container}>
         <LinkScroll href="/" to="home" smooth>
-          <image src={Logo} className={styles.logo} alt="site logo" />
+          <Image src={Logo} className={styles.logo} alt="site logo" />
         </LinkScroll>
-        <image
+        <Image
           src={HamburgerIcon}
           className={openModal ? styles[`burger--active`] : styles.burger}
           alt="hamburger menu"

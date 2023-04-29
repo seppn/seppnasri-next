@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../../styles/Projects.module.scss";
 import Carousel from "better-react-carousel";
 import LangulifeEvents from "../../assets/images/langulife-events.png";
@@ -8,7 +9,7 @@ import GitHubIcon from "../../assets/icons/github.svg";
 
 function Projects() {
   return (
-    <section className={styles} id="projects">
+    <section className={styles.projects} id="projects">
       <div className={styles.container}>
         <h2 className={styles.title}>WEB PROJECTS</h2>
         <Carousel
@@ -19,7 +20,7 @@ function Projects() {
         >
           <Carousel.Item>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 src={LangulifeEvents}
                 alt="langulife events"
                 className={styles.image}
@@ -35,7 +36,7 @@ function Projects() {
               </h5>
               <div className={styles.linkWrapper}>
                 <div className={styles.linkItemWrapper}>
-                  <image
+                  <Image
                     src={ChainIcon}
                     className={styles.icon}
                     alt="chain icon"
@@ -48,7 +49,7 @@ function Projects() {
                   </a>
                 </div>
                 <div className={styles.linkItemWrapper}>
-                  <image
+                  <Image
                     src={GitHubIcon}
                     className={styles.icon}
                     alt="github icon"
@@ -65,7 +66,7 @@ function Projects() {
           </Carousel.Item>
           <Carousel.Item>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 src={Techinto}
                 alt="techinto logo"
                 className={styles.image}
@@ -81,7 +82,7 @@ function Projects() {
               </h5>
               <div className={styles.linkWrapper}>
                 <div className={styles.linkItemWrapper}>
-                  <image
+                  <Image
                     src={ChainIcon}
                     className={styles.icon}
                     alt="chain icon"
@@ -91,7 +92,7 @@ function Projects() {
                   </a>
                 </div>
                 <div className={styles.linkItemWrapper}>
-                  <image
+                  <Image
                     src={GitHubIcon}
                     className={styles.icon}
                     alt="github icon"
@@ -108,7 +109,7 @@ function Projects() {
           </Carousel.Item>
           <Carousel.Item>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 src={Tennis}
                 alt="tennis bootcamp homepage"
                 className={styles.image}
@@ -125,7 +126,7 @@ function Projects() {
               </h5>
               <div className={styles.linkWrapper}>
                 <div className={styles.linkItemWrapper}>
-                  <image
+                  <Image
                     src={ChainIcon}
                     className={styles.icon}
                     alt="chain icon"
@@ -135,7 +136,7 @@ function Projects() {
                   </a>
                 </div>
                 <div className={styles.linkItemWrapper}>
-                  <image
+                  <Image
                     src={GitHubIcon}
                     className={styles.icon}
                     alt="github icon"

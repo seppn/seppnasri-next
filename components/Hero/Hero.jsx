@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 
 function Hero() {
   return (
-    <section className={styles}>
+    <section className={styles.hero}>
       <div className={styles.container}>
         <div className={styles.tabletContainer}>
           <div className={styles.textWrapper}>

@@ -1,10 +1,8 @@
 import styles from "../../styles/HamburgerMenu.module.scss";
 import { Link } from "react-scroll";
-import { useNavigate } from "react-router";
 import { useState, useEffect, useRef } from "react";
 
 function HamburgerMenu({ onClose }) {
-  const navigate = useNavigate();
   const modalWrapperRef = useRef(null);
   const [isClickInside, setIsClickInside] = useState(true);
 
@@ -35,7 +33,7 @@ function HamburgerMenu({ onClose }) {
 
   return (
     <>
-      <section className={styles} ref={modalWrapperRef}>
+      <section className={styles.burgerModal} ref={modalWrapperRef}>
         <div className={styles.container}>
           <div className={styles.items - wrapper}>
             <Link activeClass="active" smooth spy to="about">

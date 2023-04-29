@@ -1,8 +1,8 @@
 @use "./styles/partials/breakpoints" as *;
 @use "./styles/partials/mixins" as *;
 
-.burger-modal {
-  &__container {
+.burgerModal {
+  .container {
     padding: 1rem;
   }
 }

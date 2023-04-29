@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "../../styles/Skills.module.scss";
 import HTML from "../../assets/skills/html.svg";
 import CSS from "../../assets/skills/css.svg";
@@ -26,22 +27,22 @@ import Wordpress from "../../assets/skills/wordpress.svg";
 
 function Skills() {
   return (
-    <section className={styles} id="skills">
+    <section className={styles.skills} id="skills">
       <div className={styles.container}>
         <h2 className={styles.title}>SKILLS</h2>
         <div className={styles.desktopWrapper}>
           {/* <div className="skills__tablet-wrapper"> */}
           <div className={styles.mobileWrapper}>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={HTML} alt="html" />
+              <Image className={styles.item} src={HTML} alt="html" />
               <h4>HTML 5</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={CSS} alt="css" />
+              <Image className={styles.item} src={CSS} alt="css" />
               <h4>CSS 3</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={JavaScript}
                 alt="javascript"
@@ -50,35 +51,35 @@ function Skills() {
             </div>
           </div>
           <div className={styles.mobileWrapper}>
-            <image className={styles.item} src={MySQL} alt="mysql" />
-            <image className={styles.item} src={Sass} alt="sass" />
-            <image className={styles.item} src={Node} alt="node" />
+            <Image className={styles.item} src={MySQL} alt="mysql" />
+            <Image className={styles.item} src={Sass} alt="sass" />
+            <Image className={styles.item} src={Node} alt="node" />
           </div>
           {/* </div> */}
           {/* <div className="skills__tablet-wrapper"> */}
           <div className={styles.mobileWrapper}>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={React} alt="react" />
+              <Image className={styles.item} src={React} alt="react" />
               <h4>React JS</h4>
             </div>
 
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Wordpress} alt="wordpress" />
+              <Image className={styles.item} src={Wordpress} alt="wordpress" />
               <h4>Wordpress</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Github} alt="github" />
+              <Image className={styles.item} src={Github} alt="github" />
               <h4>Github</h4>
             </div>
           </div>
           <div className={styles.mobileWrapper}>
             {" "}
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Figma} alt="figma" />
+              <Image className={styles.item} src={Figma} alt="figma" />
               <h4>Figma</h4>
             </div>{" "}
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={VideoEditing}
                 alt="video editing"
@@ -86,7 +87,7 @@ function Skills() {
               <h4>Video Editing</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Canva} alt="canva" />
+              <Image className={styles.item} src={Canva} alt="canva" />
               <h4>Canva</h4>
             </div>{" "}
           </div>
@@ -97,11 +98,11 @@ function Skills() {
           <div className={styles.mobileWrapper}>
             {" "}
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={SEO} alt="seo" />
+              <Image className={styles.item} src={SEO} alt="seo" />
               <h4>SEO</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={Copywriting}
                 alt="copywriting"
@@ -109,7 +110,7 @@ function Skills() {
               <h4>Copywriting</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={Analytics}
                 alt="web analytics"
@@ -120,7 +121,7 @@ function Skills() {
           <div className={styles.mobileWrapper}>
             {" "}
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={GoogleTM}
                 alt="google tag manager"
@@ -128,7 +129,7 @@ function Skills() {
               <h4>Tag Manager</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={GoogleAnalytics}
                 alt="Google Analytics"
@@ -136,7 +137,7 @@ function Skills() {
               <h4>GA 4</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={GoogleAds} alt="google ads" />
+              <Image className={styles.item} src={GoogleAds} alt="google ads" />
               <h4>Google Ads</h4>
             </div>
             {/* </div> */}
@@ -146,11 +147,11 @@ function Skills() {
           <div className={styles.mobileWrapper}>
             {" "}
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Hubspot} alt="hubspot" />
+              <Image className={styles.item} src={Hubspot} alt="hubspot" />
               <h4>Hubspot</h4>
             </div>{" "}
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={BizDev}
                 alt="business development"
@@ -158,7 +159,7 @@ function Skills() {
               <h4>Biz Dev</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image
+              <Image
                 className={styles.item}
                 src={Salesforce}
                 alt="salesforce"
@@ -169,15 +170,15 @@ function Skills() {
           <div className={styles.mobileWrapper}>
             {" "}
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Trello} alt="trello" />
+              <Image className={styles.item} src={Trello} alt="trello" />
               <h4>Trello</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Jira} alt="jira" />
+              <Image className={styles.item} src={Jira} alt="jira" />
               <h4>Jira</h4>
             </div>
             <div className={styles.itemWrapper}>
-              <image className={styles.item} src={Mailchimp} alt="Mailchimp" />
+              <Image className={styles.item} src={Mailchimp} alt="Mailchimp" />
               <h4>Mailchimp</h4>
             </div>
           </div>

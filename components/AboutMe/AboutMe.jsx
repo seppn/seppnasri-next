@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import styles from "../../styles/AboutMe.module.scss";
 import AboutSepp from "../../assets/images/about.png";
 import CareerStory from "../../assets/images/career.png";
@@ -6,7 +8,7 @@ import Passion from "../../assets/images/passion.png";
 
 function AboutMe() {
   return (
-    <section className={styles} id="about">
+    <section className={styles.about} id="about">
       <div className={styles.container}>
         <h2 className={styles.title}>ABOUT ME</h2>
         <div className={styles.itemsWrapper}>
@@ -26,7 +28,7 @@ function AboutMe() {
               and have visited over 30 countries across four continents.
             </p>
             <div className={styles.imageWrapper}>
-              <image
+              <Image
                 className={styles.image}
                 src={AboutSepp}
                 alt="sepp and world map"
@@ -47,7 +49,7 @@ function AboutMe() {
               </span>
             </p>{" "}
             <div className={styles.imageWrapper}>
-              <image
+              <Image
                 className={styles.image}
                 src={CareerStory}
                 alt="career path"
@@ -71,7 +73,7 @@ function AboutMe() {
               reading. Youll find lots of Haruki Murakami books in my library.
             </p>
             <div className={styles.imageWrapper}>
-              <image
+              <Image
                 className={styles.image}
                 src={Hobbies}
                 alt="chess violin reading languages"
@@ -94,8 +96,8 @@ function AboutMe() {
               stories of the wonderful people they met or the great time they
               had, thats true joy.
             </p>
-            <div className={styles.imageWapper}>
-              <image
+            <div className={styles.imageWrapper}>
+              <Image
                 className={styles.image}
                 src={Passion}
                 alt="happy people at an event"
