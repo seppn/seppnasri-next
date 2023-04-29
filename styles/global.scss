@@ -1,0 +1,11 @@
+@use "./styles/partials/breakpoints" as *;
+@use "./styles/partials/mixins" as *;
+
+* {
+  font-family: monospace;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1920px;
+  color: white;
+  line-height: 2rem;
+}

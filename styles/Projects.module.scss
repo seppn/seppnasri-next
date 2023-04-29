@@ -1,0 +1,106 @@
+@use "./styles/partials/breakpoints" as *;
+@use "./styles/partials/mixins" as *;
+
+.projects {
+  background-color: #383838;
+  &__container {
+    padding: 1rem;
+
+    @include tablet {
+      padding: 1rem 2.5rem;
+    }
+
+    @include desktop {
+      padding: 1.5rem 7rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    // background-image: url("../../assets/images/texture.png");
+
+    background-repeat: round;
+    color: #383838;
+    padding-top: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+
+    @include tablet {
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      width: 90%;
+    }
+  }
+
+  &__image {
+    height: 10rem;
+    width: 15rem;
+    margin: 0 0 1rem 0;
+
+    @include desktop {
+      height: 15rem;
+      width: 30rem;
+    }
+  }
+
+  &__header {
+    color: #f1c43e;
+
+    margin: 0 0 0.75rem 0;
+  }
+
+  &__link {
+    color: #f1c43e;
+
+    margin: 0;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__link-item-wrapper {
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  &__summary {
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__tech-title {
+    font-size: 0.7rem;
+  }
+
+  &__tech {
+    font-size: 0.6rem;
+    margin: 0;
+    color: #91f391;
+    margin-bottom: 1rem;
+
+    @include tablet {
+      font-size: 0.75rem;
+    }
+  }
+
+  &__icon {
+    margin: 0;
+    width: 1rem;
+  }
+
+  &__status {
+    color: rgb(223, 136, 136);
+  }
+}

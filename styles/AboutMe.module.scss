@@ -1,0 +1,103 @@
+@use "../styles/partials/breakpoints" as *;
+@use "../styles/partials/mixins" as *;
+
+.about {
+  background-color: #383838;
+  padding-top: 1rem;
+
+  &__container {
+    padding: 1rem;
+
+    @include tablet {
+      padding: 1rem 2.5rem;
+    }
+
+    @include desktop {
+      padding: 1.5rem 7rem;
+    }
+  }
+
+  &__question {
+    color: #f1c43e;
+  }
+
+  &__textWrapper {
+    @include tablet {
+      align-self: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    // background-image: url("../../assets/images/texture.png");
+    background-repeat: round;
+
+    color: #383838;
+    padding-top: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+
+    @include tablet {
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__name {
+    color: #f1c43e;
+    font-family: monospace;
+  }
+
+  &__image {
+    width: 80%;
+
+    @include tablet {
+      width: 40%;
+    }
+  }
+
+  &__imageWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__itemsWrapper {
+    @include tablet {
+      display: flex;
+      gap: 1rem;
+    }
+
+    @include desktop {
+      gap: 5rem;
+    }
+  }
+
+  &__answer {
+    margin-bottom: 0.5rem;
+
+    @include desktop {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__red {
+    color: red;
+    font-family: monospace;
+  }
+
+  &__green {
+    color: #91f391;
+    font-family: monospace;
+  }
+
+  &__blue {
+    color: #66b7f7;
+    font-family: monospace;
+  }
+
+  &__purple {
+    font-family: monospace;
+    color: #bb6ac8;
+  }
+}

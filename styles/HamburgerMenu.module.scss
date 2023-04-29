@@ -1,0 +1,32 @@
+@use "./styles/partials/breakpoints" as *;
+@use "./styles/partials/mixins" as *;
+
+.burger-modal {
+  &__container {
+    padding: 1rem;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  &__item {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+  }
+
+  &__itemsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__close {
+    position: absolute;
+    right: 1.5rem;
+  }
+}
